@@ -141,9 +141,10 @@ on post-fs-data
     chown system system /sys/devices/platform/msm_sdcc.3/polling
     chown system system /sys/devices/platform/msm_sdcc.4/polling
 
+#For testing purposes...
     #Create the symlink to qcn wpa_supplicant folder for ar6000 wpa_supplicant
-    mkdir /data/system 0775 system system
-    symlink /data/misc/wifi/wpa_supplicant /data/system/wpa_supplicant
+    #mkdir /data/system 0775 system system
+    #symlink /data/misc/wifi/wpa_supplicant /data/system/wpa_supplicant
 
     #Create directories for wiper services
     mkdir /data/wpstiles/ 0755 shell
@@ -224,12 +225,12 @@ service dhcpcd_bnep0 /system/bin/dhcpcd -BKLG
     oneshot
 
 #service hostapd /system/bin/hostapd -dddd /data/hostapd/hostapd.conf
-service hostapd /system/bin/hostapd -e/data/misc/wifi/entropy.bin /data/misc/wifi/hostapd.conf
+#service hostapd /system/bin/hostapd -e/data/misc/wifi/entropy.bin /data/misc/wifi/hostapd.conf
 #    class late_start
 #    user root
-    group system wifi inet
-    oneshot
-    disabled
+#    group system wifi inet
+#    oneshot
+#    disabled
 
 on property:ro.data.large_tcp_window_size=true
     # Adjust socket buffer to enlarge TCP receive window for high bandwidth (e.g. DO-RevB)
