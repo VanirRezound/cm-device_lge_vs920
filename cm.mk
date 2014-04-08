@@ -17,6 +17,10 @@ $(call inherit-product, device/lge/vs920/vs920.mk)
 
 PRODUCT_NAME := cm_vs920
 
+CM_BUILDTYPE := BLEEDING_D2A
+KBUILD_BUILD_USER := D2A
+KBUILD_BUILD_HOST := droidbot.dxs.li
+
 # Release name and versioning
 PRODUCT_RELEASE_NAME := Spectrum
 PRODUCT_VERSION_DEVICE_SPECIFIC :=
