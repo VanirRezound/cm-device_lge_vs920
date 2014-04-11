@@ -7,7 +7,7 @@ TARGET_BOOTLOADER_BOARD_NAME := vs920
 TARGET_OTA_ASSERT_DEVICE := vs920
 
 # Try to build the kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_vs920_defconfig
+TARGET_KERNEL_CONFIG := dxs_vs920_defconfig
 # Keep this as a fallback
 TARGET_PREBUILT_KERNEL := device/lge/vs920/kernel
 

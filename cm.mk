@@ -17,7 +17,8 @@ $(call inherit-product, device/lge/vs920/vs920.mk)
 
 PRODUCT_NAME := cm_vs920
 
-CM_BUILDTYPE := BLEEDING_D2A
+CM_BUILDTYPE := UNOFFICIAL
+CM_EXTRAVERSION := BLEEDING-D2A
 KBUILD_BUILD_USER := D2A
 KBUILD_BUILD_HOST := droidbot.dxs.li
 
